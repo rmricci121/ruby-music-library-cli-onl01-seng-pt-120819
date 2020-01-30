@@ -1,0 +1,4 @@
+split_name = song.split(" - ")
+     song = self.new(split_name[1])
+     artist = Artist.find_or_create_by_name(split_name[0])
+     genre = Genre.find_or_create_by_name(split_name[2]) 
