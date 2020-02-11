@@ -46,6 +46,7 @@ class MusicLibraryController
     Song.all.sort{|x, y| x.name <=> y.name}.each do |song|
       puts "#{counter + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       counter += 1
+      binding.pry
       end
     end
     
